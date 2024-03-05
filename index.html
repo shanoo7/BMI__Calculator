@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+</head>
+<style>
+    body{
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgb(209, 199, 199);
+        background-color: rgb(36, 34, 32);
+    }
+    form input{
+        margin: 5px;
+        border: none;
+        outline: none;
+        padding: 5px;
+        border-radius: 3px;
+    }
+    form button{
+        margin: 5px;
+    }
+    #weight_guide{
+        color: rgb(230, 139, 20);
+     
+
+    }
+    
+</style>
+<body>
+    <h2 id="time"></h2>
+    <h1>Calculate Your Body Mass Index</h1>
+    <form >
+
+        <input id="height" type="text" placeholder="Height in Cm">
+        <br>
+        <input id="weight" type="text" placeholder="weight in Cm">
+        <br>
+        <button>Calculate</button>
+        <div id="result"></div>
+        <span id="weight_guide"></span>
+        
+    </form>
+
+    <div>
+        <h2>Weight Guide</h2>
+        <h4>Under Weight = Less Than 18.6</h4>
+        <h4>Normal Weight = 18.6 and 24.9</h4>
+        <h4> Overweight = Greater Than 24.9</h4>
+    </div>
+
+    <script src="bmi.js"></script>
+</body>
+</html>
