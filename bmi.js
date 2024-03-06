@@ -23,7 +23,7 @@ form.addEventListener("submit", (e) => {
         result.innerHTML = "please give a valid weight"
         result.style.color = "red"
     } else {
-        let bmi = (weight / ((height * height) / 1000)).toFixed(2)
+        let bmi = (weight / ((height * height) / 10000)).toFixed(2)
         result.innerHTML = `<span>${bmi}</span>`;
         heightInput.value = "";
         weightInput.value = "";
